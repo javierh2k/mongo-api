@@ -1,0 +1,33 @@
+{
+  "name": "backend-mongo",
+  "description": "API RESTFUL",
+  "version": "1.0.0",
+  "author": "Javier Holguin",
+  "license": "MIT",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "nodemon api/ --exec babel-node",
+    "dev": "NODE_ENV=development nodemon ./index.js",
+    "lint": "eslint ./api"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "glob": "^7.1.2",
+    "joi": "^14.3.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-helmet": "^4.0.0",
+    "koa-jwt": "^3.3.0",
+    "koa-logger": "^3.1.0",
+    "koa-router": "^7.3.0",
+    "koa2-validation": "^1.0.0",
+    "mongoose": "^5.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.11.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.2.0",
+    "nodemon": "^1.8.1"
+  }
+}
